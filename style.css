@@ -1,13 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+
+*{
+    box-sizing: border-box;
+}
 :root{
-    --:hsl(233, 47%, 7%);
-    --:hsl(244, 38%, 16%);
-    --:hsl(277, 64%, 61%);
+    --body-bg:hsl(233, 47%, 7%);
+    --container-bg:hsl(244, 38%, 16%);
+    --lilas:hsl(277, 64%, 61%);
     --white:hsl(0, 0%, 100%);
     --:hsla(0, 0%, 100%, 0.75);
-    --:hsla(0, 0%, 100%, 0.6);
+    --descolorado:hsla(0, 0%, 100%, 0.6);
 }
 body{
-    min-width:375px;
-    max-width: 1440px;
-    font-size:15px;
+    background-color: var(--body-bg);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    background-color: var(--container-bg);
+}
+.card-img2{
+
+
+}
+.card-img{
+    display: flex;
+    flex-direction:column;
+    justify-content: flex-end;
+    position:relative;
+    left:0px;
+    top:0px;
+  
+
+}
+.card-img img{
+    width: 200PX;
+    position:absolute;
+    left:643px;
+    top:44px;
+
+}
+.card{
+    padding:20px;
+}
+.card h1{
+    color: var(--white);
+    font-family:"Inter";
+    font-weight:700;
+
+}
+.card h1 .text-emphasis{
+    color: var(--lilas);
+}
+.text-card p{
+    color: var(--descolorado);
+    text-align:justify-all;
+}
+.lado-a-lado{
+    color: var(--white);
+    font-size: 1.3rem;
+    display: inline-block;
 }
